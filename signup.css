@@ -1,0 +1,38 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+   display: flex;
+   width: 100vw;
+   height: 100vh;
+}
+
+.left-item{
+    margin: 0;
+    padding: 4rem 0;
+    width: 40vw;
+    background-image: url(images/harold-reyes-MCjkKDjyJU0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.right-item {
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 60vw;;
+}
+
+input, label {
+    display:block;
+    
+}
+
+.label-input {
+    display: flex;
+ 
+}
