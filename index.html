@@ -52,13 +52,14 @@
                         <div class="label-input">
                             <p class="label-inputP">
                                 <label for="password">Password</label>
-                                <input type="password" id="password">
+                                <input class="error" type="password" id="password" onkeyup="verify();">
                             </p>
                             <p class="label-inputP">
                                 <label for="password">Confirm Password</label>
-                                <input type="password" id="password">
+                                <input class="error" type="password" id="confirm_password" onkeyup="verify();">
                             </p>
                         </div>
+                        <div id="display_error"></div>
                     </form>
                 </div>
                 <div class="item-submit">
@@ -69,10 +70,6 @@
 
         </div>
     </div>
-
-
-
-
 
 </body>
 

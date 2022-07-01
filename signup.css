@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 :root {
     --left-pad: 25px;
 }
@@ -9,7 +10,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }  
 
 .container {
@@ -34,8 +35,7 @@ body {
     align-items: center;
     margin-top: 5vh;
     padding: 10px 10px;
-    background-color: rgba(155, 103, 103, 0.3); 
-   
+    background-color: rgba(155, 103, 103, 0.3);   
 }
 
 .logo > h1{
@@ -55,7 +55,6 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: rgb(245, 236, 236);
-  
 }
 
 
@@ -65,16 +64,13 @@ body {
     padding-left: var(--left-pad);
 }
 
-
-
 .form-div {
    background-color: whitesmoke;
    box-shadow:20px 20px 50px 10px #ecdede;
    padding-top: 10px;
    padding-left: var(--left-pad);
+   padding-bottom: 10px;
 }
-
-
 
 .label-input {
     display: flex;
@@ -86,8 +82,6 @@ body {
     
 }
 
-
-
 input {
     width: 100%;
     padding: 5px;
@@ -97,15 +91,25 @@ input {
     border: 1px solid green;
 }
 
+input:focus {
+    background-color: rgb(243, 221, 135);
+}
+
 button {
     padding: 14px 40px;
     border-radius: 8px;
     background-color: #c78402;
     font-size: large;
     font-weight: bold;
-    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: antiquewhite;
 }
 
+button:hover {
+    background-color: #66470a;
+    color: white;
+}
 
 .label-inputP {
     display: flex;
@@ -114,5 +118,6 @@ button {
 
 .item-submit {
     padding-left: var(--left-pad);
+    padding-top: 10px;
 }
 
