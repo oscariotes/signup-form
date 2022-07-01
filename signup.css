@@ -1,38 +1,118 @@
-body {
-    padding: 0px;
-    margin: 0px;
+:root {
+    --left-pad: 25px;
+}
+
+* {
     box-sizing: border-box;
-}
-
-.container {
-   display: flex;
-   width: 100vw;
-   height: 100vh;
-}
-
-.left-item{
-    margin: 0;
-    padding: 4rem 0;
-    width: 40vw;
-    background-image: url(images/harold-reyes-MCjkKDjyJU0-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-.right-item {
-    margin: 0 auto;
-    padding: 4rem 0;
-    width: 60vw;;
-}
-
-input, label {
-    display:block;
     
 }
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+.container {
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.left-item {
+    flex: 2;
+    background-image:  url(images/harold-reyes-MCjkKDjyJU0-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    padding: 10px 10px;
+    background-color: rgba(155, 103, 103, 0.3); 
+   
+}
+
+.logo > h1{
+    font-size: 4.75rem;
+    white-space: nowrap;
+    color: white;
+    padding-right: 5px;
+}
+
+.credit {
+    color: white;
+    padding: 10px 5px;
+}
+
+.right-item {
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(245, 236, 236);
+  
+}
+
+
+.first-item >p {
+    font-size: larger;
+    font-weight: bold;
+    padding-left: var(--left-pad);
+}
+
+
+
+.form-div {
+   background-color: whitesmoke;
+   box-shadow:20px 20px 50px 10px #ecdede;
+   padding-top: 10px;
+   padding-left: var(--left-pad);
+}
+
+
+
 .label-input {
     display: flex;
- 
+    flex-wrap: wrap;
+    column-gap: 84px;
+    row-gap: 18px;
+    margin-bottom: 18px;
+    padding: 4px 8px;
+    
 }
+
+
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid green;
+}
+
+button {
+    padding: 14px 40px;
+    border-radius: 8px;
+    background-color: #c78402;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+
+.label-inputP {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-submit {
+    padding-left: var(--left-pad);
+}
+
